@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: shape
+Version: 0.1.1
+Summary: 2D shapes abstraction
+Home-page: https://github.com/smidm/shape
+Author: Matěj Šmíd
+Author-email: m@matejsmid.cz
+License: MIT
+Project-URL: Issue Tracker, https://github.com/smidm/shape/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: opencv-python-headless
+Requires-Dist: matplotlib
+Requires-Dist: numpy ; python_version > "3.6"
+
+[![Build Status](https://travis-ci.com/smidm/shape.svg?branch=main)](https://travis-ci.com/smidm/shape)
+
+`shape` is a Python package for 2D shapes handling.
+
+# Features
+
+- objects: 
+  - abstract shape
+  - point
+  - polygon
+  - bounding box
+  - rotated bounding box
+  - ellipse
+- relations: intersection, closeness
+- manipulation: move and rotate
+- visualization using matplotlib
+
+# Installation
+
+`pip install shape`
+
+# Documentation
+
+See tests for now.
+
+# Alternatives
+
+https://github.com/varunagrawal/bbox
+- bounding box only
+- lightweight
+
+https://github.com/shapely/shapely
+- complex
+- based on C++ GEOS library
+
+
